@@ -21,8 +21,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/greeting_textview"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/decrement_button"
         app:layout_constraintRight_toRightOf="parent"
         android:text="@string/increment"/>
+    <Button
+        android:id="@+id/decrement_button"
+        android:onClick="decrement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/greeting_textview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/increment_button"
+        android:text="@string/decrement"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

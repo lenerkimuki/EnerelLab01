@@ -24,9 +24,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 System.out.println("incrementing: " + ++count);
                 Log.i("incrementing", "" + count);
+                greetingDisplay.setText("" + count);
             }
         });
 
 
     }
+
+    public void decrement(View view){
+        System.out.println("decrementing: " + --count);
+        greetingDisplay.setText("" + count);
+    }
+
+
 }
